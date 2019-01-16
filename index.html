@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Who's on shift</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4 text-center">Who's here to help today</h1>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div id="rick" class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                            <img id="rickIMG" onclick="greyClick()" class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/22/08/40/child-817373_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Rick can help with all kinds of things!.</p>
+                              <a onclick="toggleDisplay()" href="#" class="btn btn-primary">Rick</a>
+                            </div>
+                          </div>
+            </div>
+            <div id="levi" class="col d-flex justify-content-center">
+                    <div id="leviIMG" class="card" style="width: 18rem;">
+                            <img id="rick" class="card-img-top" src="https://cdn.pixabay.com/photo/2017/06/15/22/05/girl-2406963_960_720.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Ask Levi for help!</p>
+                            </div>
+                          </div>
+            </div>
+            <div id="anthony" class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button id="stef" class="btn btn-primary" type="submit">Stef</button>
+    </div>
+
+    <script type="text/javascript" src="js.js"></script>
+</body>
+
+</html>

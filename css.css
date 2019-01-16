@@ -1,0 +1,7 @@
+.clicked {
+    background-color: gray;
+    opacity: 0.2;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+}
