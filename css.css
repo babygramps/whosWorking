@@ -1,7 +1,15 @@
 .clicked {
-    background-color: gray;
-    opacity: 0.2;
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
+    opacity: 0.5;
+    filter: blur(1px);
+  -webkit-filter: blur(1px);
 
+}
+
+.box {
+  width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
 }
