@@ -1,37 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css.css">
-    <link href="https://fonts.googleapis.com/css?family=Sarabun:400,700" rel="stylesheet">
-    <title>Color game</title>
+<meta charset="UTF-8">
+<title>Who's on shift</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css.css">
 </head>
+
 <body>
-    <h1>The Great 
-    <br>
-    <span id="colorDisplay">RGB</span>
-    <br>
-    Color Game</h1>
-    <div id="stripe">
-        <button id="reset">New Colors</button>
-        <span id="message"></span>
-        <button class="modeBtn">Easy</button>
-        <button class="selected modeBtn">Hard</button>
-        <button class="modeBtn">God mode</button>
+
+    <div class="jumbotron d-flex align-items-center justify-content-center" style="height: 100px">
+        <h1 class="display-4 text-center">Technicians on duty</h1>
+        <div class="d-flex justify-content-center">
+            
+        </div>
     </div>
-    <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+    <div class="my-5">
+        <div class="row">
+            <div class="col-2 d-flex flex-column">
+                    <button id="rick" class="btn btn-primary m-2">Rick</button>
+                    <button id="danny" class="btn btn-primary m-2">Danny</button>
+                    <button id="levi" class="btn btn-primary m-2">Levi</button>
+                    <button id="anthony" class="btn btn-primary m-2">Anthony</button>
+                    <button id="stef" class="btn btn-primary m-2">Stef</button>
+                    <button id="avi" class="btn btn-primary m-2">Avi</button>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                    <div id="rickCard" class="card" style="width: 18rem;">
+                            <div>
+                              <img id="rickIMG" class="card-img-top" src="C:\Users\rick\Desktop\whosWorking-master\img\rick.JPG" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text d-flex justify-content-center">Rick can help with:</p>
+                              <ul>
+                                <li class="lead">Fusion 360</li>
+                                <li class="lead">Illustrator</li>
+                              </ul>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                    <div id="dannyCard" class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462436_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Danny is our director. Ask him how he's doing!</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <div id="leviCard" class="card" style="width: 18rem;">
+                        <div>
+                          <img id="leviIMG" class="card-img-top" src="https://cdn.pixabay.com/photo/2016/08/12/14/25/abstract-1588720_1280.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text d-flex justify-content-center">Levi can help with:</p>
+                          <ul>
+                            <li class="lead">Fixing a flat tire</li>
+                            <li class="lead">Problem solving</li>
+                          </ul>
+                        </div>
+                      </div>
+        </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-2 d-flex flex-column">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                    <div id="anthonyCard" class="card" style="width: 18rem;">
+                            <img id="rickIMG" class="card-img-top" src="https://cdn.pixabay.com/photo/2018/11/29/23/32/dawn-3846778_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Anthony can help with all kinds of things!</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                    <div id="stefCard" class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/05/04/04/07/nature-3373196_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Ask Stef for help!</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                    <div id="aviCard" class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Avi has all kinds of skills</p>
+                            </div>
+                          </div>
+            </div>
+        </div>
     </div>
-<script src="js.js"></script>
+
+    <script type="text/javascript" src="js.js"></script>
 </body>
+
 </html>
