@@ -1,58 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Who's on shift</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:400,700" rel="stylesheet">
+    <title>Color game</title>
 </head>
-
 <body>
-
-    <div class="jumbotron">
-        <h1 class="display-4 text-center">Technicians on duty</h1>
-        <div class="d-flex justify-content-center">
-            
-        </div>
+    <h1>The Great 
+    <br>
+    <span id="colorDisplay">RGB</span>
+    <br>
+    Color Game</h1>
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <button class="modeBtn">Easy</button>
+        <button class="selected modeBtn">Hard</button>
+        <button class="modeBtn">God mode</button>
     </div>
-    <div class="my-5">
-        <div class="row">
-            <div class="col-2 d-flex flex-column">
-                    <button id="rick" class="btn btn-primary m-2">Rick</button>
-                    <button id="danny" class="btn btn-primary m-2">Danny</button>
-                    <button id="anthony" class="btn btn-primary m-2">Anthony</button>
-                    <button id="levi" class="btn btn-primary m-2">Levi</button>
-                    <button id="stef" class="btn btn-primary m-2">Stef</button>
-                    <button id="avi" class="btn btn-primary m-2">Avi</button>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                    <div id="rickCard" class="card" style="width: 18rem;">
-                            <img id="rickIMG" class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/22/08/40/child-817373_1280.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">Rick can help with all kinds of things!</p>
-                            </div>
-                          </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                    <div id="dannyCard" class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2014/11/13/06/12/boy-529067_1280.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">Ask Levi for help!</p>
-                            </div>
-                          </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                    <div id="leviCard" class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
-            </div>
-        </div>
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
-
-    <script type="text/javascript" src="js.js"></script>
+<script src="js.js"></script>
 </body>
-
 </html>
