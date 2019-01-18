@@ -4,8 +4,7 @@ for (var i=0; i<staff.length; i++){
     var idSelected = document.querySelector("#"+staff[i]);
     var cardSelected = document.getElementById(staff[i] + "Card");
 }
-
-for (var i=0; i<staff.length; i++)
+for (var i=0; i<staff.length; i++){
     idSelected.addEventListener("click", function(){
     cardSelected.classList.toggle("clicked");
     idSelected.classList.toggle("btn-light");
