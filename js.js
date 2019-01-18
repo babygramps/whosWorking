@@ -1,13 +1,11 @@
-var staff = ["rick", "danny", "levi", "anthony", "stef", "avi"];
+document.addEventListener('click', function (event) {
 
-for (var i=0; i<staff.length; i++){
-    var idSelected = document.querySelector("#"+staff[i]);
-    var cardSelected = document.getElementById(staff[i] + "Card");
-}
-for (var i=0; i<staff.length; i++){
-    idSelected.addEventListener("click", function(){
-    cardSelected.classList.toggle("clicked");
-    idSelected.classList.toggle("btn-light");
-    idSelected.classList.toggle("clicked");
-    });
-}
+	if (event.target.matches('button')) {
+		clickedButton = event.target;
+		console.log("button clicked: "); console.log(clickedButton.id);
+		var card = document.getElementById(clickedButton.id + "Card");
+		card.classList.toggle("clicked");
+		clickedButton.classList.toggle("btn-light");
+		clickedButton.classList.toggle("clicked");
+	}
+}, false);
